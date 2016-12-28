@@ -11,7 +11,7 @@
 		<meta name="author" content="">
 
 		<!-- Title -->
-		<title>Neptune</title>
+		<title>Royal Gems</title>
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="<?php echo base_url(); ?>vendor/bootstrap4/css/bootstrap.min.css">
@@ -41,326 +41,10 @@
 			<div class="preloader"></div>
 
 			<!-- Sidebar -->
-			<div class="site-overlay"></div>
-			<div class="site-sidebar">
-				<div class="custom-scroll custom-scroll-light">
-					<ul class="sidebar-menu">
-						<li class="menu-title">Main</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="tag tag-purple">3</span>
-								<span class="s-icon"><i class="ti-anchor"></i></span>
-								<span class="s-text">Dashboard</span>
-							</a>
-							<ul>
-								<li><a href="index.html">Dashboard 1</a></li>
-								<li><a href="index2.html">Dashboard 2</a></li>
-								<li><a href="index3.html">Dashboard 3</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="layouts.html" class="waves-effect  waves-light">
-								<span class="s-icon"><i class="ti-layout-tab"></i></span>
-								<span class="s-text">Layouts</span>
-							</a>
-						</li>
-						<li>
-							<a href="skins.html" class="waves-effect  waves-light">
-								<span class="s-icon"><i class="ti-palette"></i></span>
-								<span class="s-text">Skins</span>
-							</a>
-						</li>
-						<li class="menu-title">Components</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="tag tag-danger">100</span>
-								<span class="s-icon"><i class="ti-package"></i></span>
-								<span class="s-text">Widgets</span>
-							</a>
-							<ul>
-								<li><a href="widgets-blog.html">Blog</a></li>
-								<li><a href="widgets-ecommerce.html">Ecommerce</a></li>
-								<li><a href="widgets-footers.html">Footers</a></li>
-								<li><a href="widgets-headers.html">Headers</a></li>
-								<li><a href="widgets-modals.html">Modals</a></li>
-								<li><a href="widgets-navigation.html">Navigation</a></li>
-								<li><a href="widgets-social.html">Social</a></li>
-								<li><a href="widgets-tiles.html">Tiles</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-paint-bucket"></i></span>
-								<span class="s-text">UI Kit</span>
-							</a>
-							<ul>
-								<li><a href="ui-arrows.html">Arrows</a></li>
-								<li><a href="ui-buttons.html">Buttons</a></li>
-								<li><a href="ui-cards.html">Cards</a></li>
-								<li><a href="ui-carousel.html">Carousel</a></li>
-								<li><a href="ui-dropdowns.html">Dropdowns</a></li>
-								<li><a href="ui-flags.html">Flags</a></li>
-								<li><a href="ui-grid.html">Grid</a></li>
-								<li><a href="ui-modal.html">Modal</a></li>
-								<li><a href="ui-navs.html">Navs</a></li>
-								<li><a href="ui-notifications.html">Notifications</a></li>
-								<li><a href="ui-progress.html">Progress</a></li>
-								<li><a href="ui-spinners.html">Spinners</a></li>
-								<li><a href="ui-typography.html">Typography</a></li>
-								<li><a href="ui-other.html">Other</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-pencil-alt"></i></span>
-								<span class="s-text">Forms</span>
-							</a>
-							<ul>
-								<li><a href="forms-basic.html">Basic Elements</a></li>
-								<li><a href="forms-editors.html">Editors</a></li>
-								<li><a href="forms-masks.html">Form Masks</a></li>
-								<li><a href="forms-material.html">Material Form</a></li>
-								<li><a href="forms-pickers.html">Form Pickers</a></li>
-								<li><a href="forms-upload.html">File Upload</a></li>
-								<li><a href="forms-wizard.html">Form Wizard</a></li>
-								<li><a href="forms-plugins.html">Plugins</a></li>
-								<li><a href="forms-range-slider.html">Range Slider</a></li>
-								<li><a href="forms-typeahead.html">Typeahead</a></li>
-								<li><a href="forms-xeditable.html">X-editable</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-menu-alt"></i></span>
-								<span class="s-text">Tables</span>
-							</a>
-							<ul>
-								<li><a href="tables-basic.html">Basic Tables</a></li>
-								<li><a href="tables-datatable.html">Data Tables</a></li>
-								<li><a href="tables-editable.html">Editable Tables</a></li>
-								<li><a href="tables-jsgrid.html">jsGrid Tables</a></li>
-								<li><a href="tables-responsive.html">Responsive Tables</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="tag tag-success">3</span>
-								<span class="s-icon"><i class="ti-gallery"></i></span>
-								<span class="s-text">Pages</span>
-							</a>
-							<ul>
-								<li><a href="pages-blank.html">Blank</a></li>
-								<li><a href="pages-contactform.html">Contact Form</a></li>
-								<li><a href="pages-403.html">Error 403</a></li>
-								<li><a href="pages-404.html">Error 404</a></li>
-								<li><a href="pages-500.html">Error 500</a></li>
-								<li><a href="pages-faq.html">FAQ</a></li>
-								<li><a href="pages-invoice.html">Invoice</a></li>
-								<li><a href="pages-profile.html">Profile</a></li>
-								<li><a href="pages-reset-password.html">Reset Password</a></li>
-								<li><a href="pages-sign-in.html">Sign In</a></li>
-								<li><a href="pages-sign-in2.html">Sign In 2</a></li>
-								<li><a href="pages-sign-up.html">Sign Up</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-view-grid"></i></span>
-								<span class="s-text">Apps</span>
-							</a>
-							<ul>
-								<li><a href="apps-chat.html">Chat</a></li>
-								<li><a href="apps-contacts.html">Contacts</a></li>
-								<li><a href="apps-inbox.html">Inbox</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-star"></i></span>
-								<span class="s-text">Icons</span>
-							</a>
-							<ul>
-								<li><a href="icons-fontawesome.html">Font Awesome</a></li>
-								<li><a href="icons-ionicons.html">Ionicons</a></li>
-								<li><a href="icons-material.html">Material Design</a></li>
-								<li><a href="icons-pe7.html">Pe7 Icons</a></li>
-								<li><a href="icons-themify.html">Themify Icons</a></li>
-								<li><a href="icons-typicons.html">Typicons</a></li>
-								<li><a href="icons-weather.html">Weather Icons</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-settings"></i></span>
-								<span class="s-text">Utilities</span>
-							</a>
-							<ul>
-								<li><a href="utilities-border.html">Border utilities</a></li>
-								<li><a href="utilities-color.html">Color utilities</a></li>
-								<li><a href="utilities-other.html">Other utilities</a></li>
-							</ul>
-						</li>
-						<li class="menu-title">More</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-location-arrow"></i></span>
-								<span class="s-text">Extra</span>
-							</a>
-							<ul>
-								<li><a href="extra-animations.html">Animations</a></li>
-								<li><a href="extra-comments.html">Comments</a></li>
-								<li><a href="extra-crop.html">Image Crop</a></li>
-								<li><a href="extra-lightbox.html">Lightbox</a></li>
-								<li><a href="extra-loading-progress.html">Loading Progress</a></li>
-								<li><a href="extra-nestable.html">Nestable</a></li>
-								<li><a href="extra-prices.html">Prices</a></li>
-								<li><a href="extra-scrollbar.html">Scroll Bar</a></li>
-								<li><a href="extra-search.html">Search</a></li>
-								<li><a href="extra-timeline.html">Timeline</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-new-window"></i></span>
-								<span class="s-text">Frontend</span>
-							</a>
-							<ul>
-								<li><a href="frontend.html">Frontend 1</a></li>
-								<li><a href="frontend2.html">Frontend 2</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="tag tag-info">6</span>
-								<span class="s-icon"><i class="ti-bar-chart-alt"></i></span>
-								<span class="s-text">Charts</span>
-							</a>
-							<ul>
-								<li><a href="charts-chartjs.html">Chart.js</a></li>
-								<li><a href="charts-chartist.html">Chartist Chart</a></li>
-								<li><a href="charts-easy.html">Easy Pie Chart</a></li>
-								<li><a href="charts-flot.html">Flot Chart</a></li>
-								<li><a href="charts-morris.html">Morris Chart</a></li>
-								<li><a href="charts-peity.html">Peity Chart</a></li>
-								<li><a href="charts-sparkline.html">Sparkline Chart</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-email"></i></span>
-								<span class="s-text">Email Templates</span>
-							</a>
-							<ul>
-								<li><a href="email-alert.html">Alert</a></li>
-								<li><a href="email-basic.html">Basic</a></li>
-								<li><a href="email-ecommerce.html">Ecommerce</a></li>
-							</ul>
-						</li>
-						<li class="with-sub">
-							<a href="#" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-location-pin"></i></span>
-								<span class="s-text">Maps</span>
-							</a>
-							<ul>
-								<li><a href="maps-google.html">Google Map</a></li>
-								<li><a href="maps-vector.html">Vector Map</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="calendar.html" class="waves-effect  waves-light">
-								<span class="s-icon"><i class="ti-calendar"></i></span>
-								<span class="s-text">Calendar</span>
-							</a>
-						</li>
-						<li class="with-sub compact-hide">
-							<a href="javascript: void(0);" class="waves-effect  waves-light">
-								<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-								<span class="s-icon"><i class="ti-menu"></i></span>
-								<span class="s-text">Menu Levels</span>
-							</a>
-							<ul>
-								<li class="with-sub">
-									<a href="javascript: void(0);">
-										<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-										<span class="s-text">Level 1</span>
-									</a>
-									<ul>
-										<li class="with-sub">
-											<a href="javascript: void(0);">
-												<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-												<span class="s-text">Level 1.2</span>
-											</a>
-											<ul>
-												<li class="with-sub">
-													<a href="javascript: void(0);">
-														<span class="s-caret"><i class="fa fa-angle-down"></i></span>
-														<span class="s-text">Level 1.2.3</span>
-													</a>
-													<ul>
-														<li><a href="javascript: void(0);">Level 1.2.3.4</a></li>
-														<li><a href="javascript: void(0);">Level 1.2.3.4</a></li>
-													</ul>
-												</li>
-												<li><a href="javascript: void(0);">Level 1.2.3</a></li>
-											</ul>
-										</li>
-										<li><a href="javascript: void(0);">Level 1.2</a></li>
-									</ul>
-								</li>
-								<li><a href="javascript: void(0);">Level 1</a></li>
-							</ul>
-						</li>
-						<li class="menu-title compact-hide">System usage</li>
-						<li class="compact-hide">
-							<div class="progress-widget progress-widget-light">
-								<div class="mb-0-5">
-									SSD
-									<span class="float-xs-right">5 GB</span>
-								</div>
-								<progress class="progress progress-rounded progress-success progress-sm" value="60" max="100">100%</progress>
-								<div class="mb-0-5">
-									CPU
-									<span class="float-xs-right">80%</span>
-								</div>
-								<progress class="progress progress-rounded progress-danger progress-sm mb-0-5" value="80" max="100">100%</progress>
-							</div>
-						</li>
-						<li class="menu-title compact-hide">Tags</li>
-						<li class="compact-hide">
-							<a href="javascript: void(0);" class="waves-effect  waves-light">
-								<span class="s-icon"><i class="fa fa-circle-o text-danger"></i></span>
-								<span class="s-text">Ideas</span>
-							</a>
-						</li>
-						<li class="compact-hide">
-							<a href="javascript: void(0);" class="waves-effect  waves-light">
-								<span class="s-icon"><i class="fa fa-circle-o text-warning"></i></span>
-								<span class="s-text">Projects</span>
-							</a>
-						</li>
-						<li class="compact-hide">
-							<a href="documentation.html" class="waves-effect  waves-light">
-								<span class="s-icon"><i class="fa fa-circle-o text-primary"></i></span>
-								<span class="s-text">Documentation</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+
+
+
+            <?php $this->load->view('Menu');?>
 
 			<!-- Sidebar second -->
 			<div class="site-sidebar-second custom-scroll custom-scroll-dark">
@@ -642,160 +326,8 @@
 				</div>
 			</div>
 
-			<!-- Template options -->
-			<div class="template-options">
-				<div class="to-toggle"><i class="ti-settings"></i></div>
-				<div class="custom-scroll custom-scroll-dark">
-					<div class="to-content">
-						<a class="btn btn-info btn-block waves-effect waves-light mb-2" href="https://themeforest.net/item/neptune-dashboard-ui-kit-for-web-application-development/18519415?ref=demo" target="_blank">BUY NOW $24</a>
-						<h6>Layouts</h6>
-						<div class="row mb-2 text-xs-center">
-							<div class="col-xs-6 mb-2">
-								<div class="to-item">
-									<a href="index.html">
-										<img src="img/layouts/default.png" class="img-fluid">
-									</a>
-									<div class="text-muted">Default</div>
-								</div>
-							</div>
-							<div class="col-xs-6 mb-2">
-								<div class="to-item">
-									<label>
-										<input name="compact-sidebar" type="checkbox">
-										<div class="to-icon"><i class="ti-check"></i></div>
-										<img src="img/layouts/compact-sidebar.png" class="img-fluid">
-									</label>
-									<div class="text-muted">Compact Sidebar</div>
-								</div>
-							</div>
-							<div class="col-xs-6 mb-2">
-								<div class="to-item">
-									<label>
-										<input name="fixed-header" type="checkbox" checked>
-										<div class="to-icon"><i class="ti-check"></i></div>
-										<img src="img/layouts/fixed-header.png" class="img-fluid">
-									</label>
-									<div class="text-muted">Fixed Header</div>
-								</div>
-							</div>
-							<div class="col-xs-6 mb-2">
-								<div class="to-item">
-									<label>
-										<input name="fixed-sidebar" type="checkbox" checked>
-										<div class="to-icon"><i class="ti-check"></i></div>
-										<img src="img/layouts/sticky-sidebar.png" class="img-fluid">
-									</label>
-									<div class="text-muted">Sticky Sidebar</div>
-								</div>
-							</div>
-							<div class="col-xs-6 mb-2">
-								<div class="to-item">
-									<label>
-										<input name="boxed-wrapper" type="checkbox">
-										<div class="to-icon"><i class="ti-check"></i></div>
-										<img src="img/layouts/boxed-wrapper.png" class="img-fluid">
-									</label>
-									<div class="text-muted">Boxed Wrapper</div>
-								</div>
-							</div>
-							<div class="col-xs-6 mb-2">
-								<div class="to-item">
-									<label>
-										<input name="static" type="checkbox">
-										<div class="to-icon"><i class="ti-check"></i></div>
-										<img src="img/layouts/static.png" class="img-fluid">
-									</label>
-									<div class="text-muted">Static</div>
-								</div>
-							</div>
-						</div>
-						<h6>Skins</h6>
-						<div class="row">
-							<div class="col-xs-3 mb-2">
-								<label class="skin-label">
-									<input name="skin" value="skin-default" type="radio" checked>
-									<div class="to-icon"><i class="ti-check"></i></div>
-									<div class="to-skin">
-										<span class="skin-dark-blue"></span>
-										<span class="skin-white"></span>
-										<span class="skin-dark-blue"></span>
-									</div>
-								</label>
-							</div>
-							<div class="col-xs-3 mb-2">
-								<label class="skin-label">
-									<input name="skin" value="skin-1" type="radio">
-									<div class="to-icon"><i class="ti-check"></i></div>
-									<div class="to-skin">
-										<span class="skin-dark-blue-2"></span>
-										<span class="skin-dark-blue-2"></span>
-										<span class="bg-white"></span>
-									</div>
-								</label>
-							</div>
-							<div class="col-xs-3 mb-2">
-								<label class="skin-label">
-									<input name="skin" value="skin-2" type="radio">
-									<div class="to-icon"><i class="ti-check"></i></div>
-									<div class="to-skin">
-										<span class="bg-danger"></span>
-										<span class="bg-white"></span>
-										<span class="bg-black"></span>
-									</div>
-								</label>
-							</div>
-							<div class="col-xs-3 mb-2">
-								<label class="skin-label">
-									<input name="skin" value="skin-3" type="radio">
-									<div class="to-icon"><i class="ti-check"></i></div>
-									<div class="to-skin">
-										<span class="bg-white"></span>
-										<span class="bg-white"></span>
-										<span class="bg-white"></span>
-									</div>
-								</label>
-							</div>
-							<div class="col-xs-3 mb-2">
-								<label class="skin-label">
-									<input name="skin" value="skin-4" type="radio">
-									<div class="to-icon"><i class="ti-check"></i></div>
-									<div class="to-skin">
-										<span class="bg-white"></span>
-										<span class="skin-dark-blue-2"></span>
-										<span class="bg-white"></span>
-									</div>
-								</label>
-							</div>
-							<div class="col-xs-3 mb-2">
-								<label class="skin-label">
-									<input name="skin" value="skin-5" type="radio">
-									<div class="to-icon"><i class="ti-check"></i></div>
-									<div class="to-skin">
-										<span class="bg-primary"></span>
-										<span class="bg-primary"></span>
-										<span class="bg-white"></span>
-									</div>
-								</label>
-							</div>
-							<div class="col-xs-3 mb-2">
-								<label class="skin-label">
-									<input name="skin" value="skin-6" type="radio">
-									<div class="to-icon"><i class="ti-check"></i></div>
-									<div class="to-skin">
-										<span class="bg-black"></span>
-										<span class="bg-info"></span>
-										<span class="bg-black"></span>
-									</div>
-								</label>
-							</div>
-						</div>
-						<div class="to-material">
-							<div class="tom-checkbox"><input name="material-design" type="checkbox" class="js-switch" data-size="small" data-color="#20b9ae"></div>
-							<div class="text-truncate">Material design</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
+
 
 			<!-- Header -->
 			<div class="site-header">
@@ -923,9 +455,7 @@
 									<a class="dropdown-item" href="#">
 										<i class="ti-user mr-0-5"></i> Profile
 									</a>
-									<a class="dropdown-item" href="#">
-										<i class="ti-settings mr-0-5"></i> Settings
-									</a>
+
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#"><i class="ti-help mr-0-5"></i> Help</a>
 									<a class="dropdown-item" href="#"><i class="ti-power-off mr-0-5"></i> Sign out</a>
@@ -1013,6 +543,7 @@
 				</nav>
 			</div>
 
+
 			<div class="site-content">
 				<!-- Content -->
 				<div class="content-area py-1">
@@ -1061,209 +592,121 @@
 								</div>
 							</div>
 						</div>
-						<ul class="nav nav-tabs" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link active" href="#">Activity</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-muted" href="#">Projects monitor</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-muted" href="#">Memory usage</a>
-							</li>
-						</ul>
-						<div class="box box-block bg-white b-t-0 mb-2">
-							<div class="text-muted mb-1">Calculated in last 10 days</div>
-							<div class="chart-container demo-chart">
-								<div id="main-chart" class="chart-placeholder"></div>
-							</div>
-						</div>
-						<div class="row row-md mb-2">
-							<div class="col-md-4">
-								<div class="box bg-white text-xs-center">
-									<div class="box-block pb-1">
-										<h5 class="mb-2">Open projects</h5>
-										<div class="btn-group mb-1">
-											<button type="button" class="btn btn-secondary active waves-effect waves-light">Week</button>
-											<button type="button" class="btn btn-secondary waves-effect waves-light">Month</button>
-											<button type="button" class="btn btn-secondary waves-effect waves-light">Year</button>
-										</div>
-										<div id="donut" class="chart-container demo-chart-2"></div>
-									</div>
-									<div class="box-block b-t">
-										<span class="text-muted">last contract signed</span> <a class="text-primary" href="#"><span class="underline">today at 14:57</span></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-8">
-								<div class="box bg-white">
-									<table class="table table-grey-head mb-md-0">
-										<thead>
-											<tr>
-												<th>#</th>
-												<th>Username</th>
-												<th>Project</th>
-												<th>Last update</th>
-												<th>Progress</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th scope="row">1</th>
-												<td>Jonathan Mel</td>
-												<td>
-													<a class="text-primary" href="#"><span class="underline">First project</span></a>
-												</td>
-												<td>
-													<span class="text-muted">5 minutes ago</span>
-												</td>
-												<td>
-													<progress class="progress progress-success progress-sm d-inline-block mb-0" value="44" max="100">100%</progress>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">2</th>
-												<td>Larry Hal</td>
-												<td>
-													<a class="text-primary" href="#"><span class="underline">Second project</span></a>
-												</td>
-												<td>
-													<span class="text-muted">3 days ago</span>
-												</td>
-												<td>
-													<progress class="progress progress-danger progress-sm d-inline-block mb-0" value="75" max="100">100%</progress>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">3</th>
-												<td>Ron Carran</td>
-												<td>
-													<a class="text-primary" href="#"><span class="underline">Third project</span></a>
-												</td>
-												<td>
-													<span class="text-muted">Last monday</span>
-												</td>
-												<td>
-													<progress class="progress progress-warning progress-sm d-inline-block mb-0" value="20" max="100">100%</progress>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">4</th>
-												<td>Carleton Josiah</td>
-												<td>
-													<a class="text-primary" href="#"><span class="underline">Another project</span></a>
-												</td>
-												<td>
-													<span class="text-muted">5 minutes ago</span>
-												</td>
-												<td>
-													<progress class="progress progress-primary progress-sm d-inline-block mb-0" value="10" max="100">100%</progress>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">5</th>
-												<td>Wolfe Stevie</td>
-												<td>
-													<a class="text-primary" href="#"><span class="underline">Old project</span></a>
-												</td>
-												<td>
-													<span class="text-muted">3 days ago</span>
-												</td>
-												<td>
-													<progress class="progress progress-info progress-sm d-inline-block mb-0" value="90" max="100">100%</progress>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">6</th>
-												<td>Vance Osborn</td>
-												<td>
-													<a class="text-primary" href="#"><span class="underline">Important project</span></a>
-												</td>
-												<td>
-													<span class="text-muted">Last monday</span>
-												</td>
-												<td>
-													<progress class="progress progress-warning progress-sm d-inline-block mb-0" value="35" max="100">100%</progress>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">7</th>
-												<td>Jonathan Mel</td>
-												<td>
-													<a class="text-primary" href="#"><span class="underline">First project</span></a>
-												</td>
-												<td>
-													<span class="text-muted">5 minutes ago</span>
-												</td>
-												<td>
-													<progress class="progress progress-success progress-sm d-inline-block mb-0" value="44" max="100">100%</progress>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">8</th>
-												<td>Larry Hal</td>
-												<td>
-													<a class="text-primary" href="#"><span class="underline">Second project</span></a>
-												</td>
-												<td>
-													<span class="text-muted">3 days ago</span>
-												</td>
-												<td>
-													<progress class="progress progress-danger progress-sm d-inline-block mb-0" value="75" max="100">100%</progress>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">9</th>
-												<td>Ron Carran</td>
-												<td>
-													<a class="text-primary" href="#"><span class="underline">Third project</span></a>
-												</td>
-												<td>
-													<span class="text-muted">Last monday</span>
-												</td>
-												<td>
-													<progress class="progress progress-warning progress-sm d-inline-block mb-0" value="20" max="100">100%</progress>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="box box-block bg-white">
-							<div class="clearfix mb-1">
-								<h5 class="float-xs-left">Sales statistics</h5>
-								<div class="float-xs-right">
-									<button class="btn btn-link btn-sm text-muted" type="button"><i class="ti-angle-down"></i></button>
-									<button class="btn btn-link btn-sm text-muted" type="button"><i class="ti-reload"></i></button>
-									<button class="btn btn-link btn-sm text-muted" type="button"><i class="ti-close"></i></button>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-8">
-									<div id="world" style="height: 400px;"></div>
-								</div>
-								<div class="col-md-4 demo-progress">
-									<p class="mb-0-5">New York City <span class="float-xs-right">25%</span></p>
-									<progress class="progress progress-success progress-sm" value="25" max="100">100%</progress>
-									<p class="mb-0-5">Singapore <span class="float-xs-right">15%</span></p>
-									<progress class="progress progress-info progress-sm" value="15" max="100">100%</progress>
-									<p class="mb-0-5">Tokyo <span class="float-xs-right">30%</span></p>
-									<progress class="progress progress-warning progress-sm mb-2" value="30" max="100">100%</progress>
-									<p class="mb-0-5">Hong Kong <span class="float-xs-right">5%</span></p>
-									<progress class="progress progress-danger progress-sm mb-2" value="5" max="100">100%</progress>
-									<a class="btn btn-outline-primary" href="#">Detail statistics</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+
+
+                        <!-- from start -->
+
+                        <div class="content-area py-1">
+                            <div class="container-fluid">
+
+<!--                                <div class="box box-block bg-white">-->
+<!--                                    <h5>Material Form</h5>-->
+<!--                                    <form class="form-material">-->
+<!--                                        <div class="form-group row">-->
+<!--                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>-->
+<!--                                            <div class="col-sm-10">-->
+<!--                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="form-group row">-->
+<!--                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>-->
+<!--                                            <div class="col-sm-10">-->
+<!--                                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="form-group row">-->
+<!--                                            <div class="offset-sm-2 col-sm-10">-->
+<!--                                                <button type="submit" class="btn btn-primary">Sign in</button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </form>-->
+<!--                                </div>-->
+
+                                <div class="col-lg-7">
+
+
+                                <div class="box box-block bg-white">
+                                    <h5>Colors</h5>
+
+                                    <form class="form-material material-primary" id="p_from" method="post" action=""  enctype="multipart/form-data">
+                                        <div class="form-group row ">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Product ID</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control"  placeholder="Product ID" name="p_id">
+                                            </div>
+
+                                            <div class=" col-md-6">
+                                                <button onclick="myfunc()" class="btn btn-primary" value="Submit" name="Submit">Submit</button>
+
+                                            </div>
+                                        </div>
+
+                                        <br>
+                                        <div class="form-group row" >
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Type</label>
+                                            <div class="col-sm-4">
+                                                <input type="email" class="form-control" id="inputEmail3" >
+                                            </div>
+
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Weight</label>
+                                            <div class="col-sm-4">
+                                                <input type="email" class="form-control" id="inputEmail3" >
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Success</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Success">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Warning</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Warning">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Danger</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Danger">
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+                                </div>
+                            </div>
+
+
+
+                <div class="col-lg-5">
+
+                    <div class="box box-block bg-white">
+                        <h5>Cart</h5>
+
+                        <?php
+
+                        if(isset($_POST['Submit'])){
+
+
+                            extract($_POST);
+                            echo $p_id;
+                        }
+                        ?>
+                    </div>
+                </div>
+                </div>
+                </div>
 				<!-- Footer -->
 				<footer class="footer">
 					<div class="container-fluid">
 						<div class="row text-xs-center">
 							<div class="col-sm-4 text-sm-left mb-0-5 mb-sm-0">
-								2016 © Neptune
+								2016 © Tech Cloud Ltd.
 							</div>
 							<div class="col-sm-8 text-sm-right">
 								<ul class="nav nav-inline l-h-2">
@@ -1306,6 +749,20 @@
 		<script type="text/javascript" src="<?php echo base_url(); ?>js/app.js"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>js/demo.js"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>js/index.js"></script>
+
+
+        <script>
+            function myfunc() {
+
+
+                $("#p_from").submit(function(e) {
+
+                    e.preventDefault();
+
+                });
+
+              )
+        </script>
 	</body>
 
 <!-- Mirrored from big-bang-studio.com/neptune/neptune-default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Dec 2016 09:06:36 GMT -->
