@@ -43,6 +43,7 @@ class  Home extends CI_Controller{
     public function removeall(){
 
         $this->cart->destroy();
+        redirect(Home::get_instance());
     }
 
 

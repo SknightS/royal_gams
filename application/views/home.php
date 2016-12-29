@@ -735,7 +735,13 @@
 			</div>
 
 		</div>
+                <script type="text/javascript">
 
+                        var text_input = document.getElementById ('p_id');
+                        text_input.focus ();
+                        text_input.select ();
+
+                </script>
 		<!-- Vendor JS -->
 		<script type="text/javascript" src="<?php echo base_url(); ?>vendor/jquery/jquery-1.12.3.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>vendor/tether/js/tether.min.js"></script>
@@ -767,6 +773,7 @@
 
 
         <script>
+
             function myfunc() {
 
 
