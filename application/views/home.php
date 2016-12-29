@@ -32,6 +32,8 @@
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<![endif]-->
 	</head>
 	<body class="fixed-sidebar fixed-header skin-default content-appear">
@@ -628,11 +630,11 @@
                                 <div class="box box-block bg-white">
                                     <h5>Colors</h5>
 
-                                    <form class="form-material material-primary" id="p_from" method="post" action=""  enctype="multipart/form-data">
+                                    <form class="form-material material-primary" id="p_from" method="post" action="Home/addcart"  enctype="multipart/form-data">
                                         <div class="form-group row ">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Product ID</label>
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label"  >Product ID</label>
                                             <div class="col-md-4">
-                                                <input type="text" class="form-control"  placeholder="Product ID" name="p_id">
+                                                <input type="text" class="form-control"  placeholder="Product ID" name="p_id" id="p_id">
                                             </div>
 
                                             <div class=" col-md-6">
@@ -694,9 +696,21 @@
 
 
                             extract($_POST);
-                            echo $p_id;
+                           // echo $p_id;
                         }
+
+
+                        foreach ($this->cart->contents() as $items){
+
+                            echo "id: ".$items['id']."<br>";
+                            echo "Price: ".$items['price']."<br>";
+
+                        }
+                        $rows = "count: ".count($this->cart->contents());
+                        echo $rows."<br>";
+
                         ?>
+                        <a href="Home/removeall"> <button>Clear Cart</button></a>
                     </div>
                 </div>
                 </div>
@@ -751,18 +765,22 @@
 		<script type="text/javascript" src="<?php echo base_url(); ?>js/index.js"></script>
 
 
+
         <script>
             function myfunc() {
 
 
                 $("#p_from").submit(function(e) {
 
-                    e.preventDefault();
+                   e.preventDefault();
 
                 });
 
               )
         </script>
+
+
+
 	</body>
 
 <!-- Mirrored from big-bang-studio.com/neptune/neptune-default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Dec 2016 09:06:36 GMT -->
