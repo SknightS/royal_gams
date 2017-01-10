@@ -12,7 +12,7 @@
 
             </li>
             <li>
-                <a href="layouts.html" class="waves-effect  waves-light">
+                <a href="Stockc" class="waves-effect  waves-light">
                     <span class="s-icon"><i class="ti-layout-tab"></i></span>
                     <span class="s-text">Stock</span>
                 </a>

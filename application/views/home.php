@@ -624,71 +624,86 @@
 <!--                                    </form>-->
 <!--                                </div>-->
 
-                                <div class="col-lg-7">
+                                <div class="col-lg-5">
 
 
-                                <div class="box box-block bg-white">
-                                    <h5>Colors</h5>
+                                <div class="box box-block bg-white" >
+                                    <h5>Product</h5>
 
-                                    <form class="form-material material-primary" id="p_from" method="post" action="Home/addcart"  enctype="multipart/form-data">
+                                    <form class="form-material material-primary" id="p_from" method="post" action="Home"  enctype="multipart/form-data">
                                         <div class="form-group row ">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label"  >Product ID</label>
+                                            <label for="inputEmail3" class="col-sm-3 col-form-label"  >Product ID</label>
                                             <div class="col-md-4">
                                                 <input type="text" class="form-control"  placeholder="Product ID" name="p_id" id="p_id">
                                             </div>
 
-                                            <div class=" col-md-6">
-                                                <button onclick="myfunc()" class="btn btn-primary" value="Submit" name="Submit">Submit</button>
+                                            <div class=" col-md-5">
+                                                <button type="submit" class="btn btn-primary"  name="psubmit">Submit</button>
 
-                                            </div>
-                                        </div>
-
-                                        <br>
-                                        <div class="form-group row" >
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Type</label>
-                                            <div class="col-sm-4">
-                                                <input type="email" class="form-control" id="inputEmail3" >
-                                            </div>
-
-                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Weight</label>
-                                            <div class="col-sm-4">
-                                                <input type="email" class="form-control" id="inputEmail3" >
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Success</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Success">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Warning</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Warning">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Danger</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Danger">
                                             </div>
                                         </div>
                                     </form>
+                                    <?php
+                                    if(isset($_POST['psubmit'])){
 
+                                    foreach ($viewproduct as $vp) {
+                                        ?>
+
+                                        <br>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-3 col-form-label">Product ID</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="inputEmail3" value="<?php echo $vp->product_id?>"
+                                                       readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-3 col-form-label">Type</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="inputEmail3"
+                                                       value="<?php echo $vp->type?>"readonly>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-3 col-form-label">Weight</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="inputEmail3"
+                                                       placeholder="Success" value="<?php echo $vp->weight?>"readonly>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-3 col-form-label">Price</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="inputEmail3"
+                                                       placeholder="Warning" value="<?php echo $vp->price?>" readonly>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-3 col-form-label">Amount</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="inputEmail3"
+                                                       placeholder="Danger" value="<?php echo $vp->amount?>" readonly>
+                                            </div>
+                                        </div>
+
+                                        <?php
+                                    }
+                                    }
+                                    ?>
 
                                 </div>
                             </div>
 
 
 
-                <div class="col-lg-5">
+                <div class="col-lg-7">
 
                     <div class="box box-block bg-white">
-                        <h5>Cart</h5>
+                        <h5>Cart</h5><br>
 
                         <?php
 
@@ -700,11 +715,12 @@
                         }
 
 
-                        foreach ($this->cart->contents() as $items){
+                        foreach ($this->cart->contents() as $items){ ?>
 
-                            echo "id: ".$items['id']."<br>";
-                            echo "Price: ".$items['price']."<br>";
-
+                            <div style="background-color: #efefef; padding:20px; font-weight: bold"> <?php
+                                echo "ID: ".$items['id']."<br>";
+                                echo "Price: ".$items['price']."<br>"; ?>
+                            </div> <br> <?php
                         }
                         $rows = "count: ".count($this->cart->contents());
                         echo $rows."<br>";
