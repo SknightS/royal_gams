@@ -696,7 +696,9 @@
                                         </p>
                                     </section>
 
-
+                                <section id="content2">
+                                    <?php $this->load->view('insertproduct');?>
+                                </section>
 
                                 <?php
                                 //so you want to show the sidebar once submitted?
@@ -705,18 +707,17 @@
                                    // echo 1223232332;
                                     ?>
                                     <script>
-                                        alert("hello dolly");
-                                        var s = document.getElementById("content2");
-                                        s.style.display="block";
+                                       // alert("hello dolly");
+                                       //document.getElementById("content2").style.display='block';
+                                      // document.getElementById("content2").click();
+                                       document.getElementById("tab2").checked = true;
                                     </script>
-                                    <section id="content2">
-                                        <?php $this->load->view('insertproduct');?>
-                                    </section>
+
                                     <?php
                                 }else {?>
-                                <section id="content2">
-                                    <?php $this->load->view('insertproduct');?>
-                                </section>
+<!--                                <section id="content2">-->
+<!--                                    --><?php //$this->load->view('insertproduct');?>
+<!--                                </section>-->
                                     <?php
 
                                 }

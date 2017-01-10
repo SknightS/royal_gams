@@ -4,8 +4,14 @@ class Stockc extends CI_Controller{
 
     public function index()
     {
-        $this->load->view('stock');
+        if(isset($_POST['psubmit'])){
+            $this->load->model('Stock');
+            $this->Stock->insertstock();
+            $this->load->view('stock');
 
+        }else{
+            $this->load->view('stock');
+        }
     }
 
     function insertstock(){
@@ -27,7 +33,7 @@ class Stockc extends CI_Controller{
         //$this->load->model('Stock');
         //$this->Stock->insertstock();
 
-        $this->load->view('stock');
+      //  $this->load->view('stock');
        // redirect(Stockc);
 
        // $this->load->helper('url');

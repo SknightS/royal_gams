@@ -1,5 +1,5 @@
 <!--    --><?php //echo form_open('stockc/insertstock', 'class="form-material material-primary"'); ?>
-<form class="form-material material-primary" method="post" action="Stockc/insertstock">
+<form class="form-material material-primary" method="post" action="">
     <div class="form-group row ">
         <label  class="col-md-3 col-form-label"  >Product ID</label>
         <div class="col-md-7">
