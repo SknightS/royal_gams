@@ -3,16 +3,15 @@
         <ul class="sidebar-menu">
             <li class="menu-title">Main</li>
             <li class="with-sub">
-                <a href="#" class="waves-effect  waves-light">
-                    <span class="s-caret"><i class="fa fa-angle-down"></i></span>
-                    <span class="tag tag-purple">3</span>
+                <a href="<?php base_url()?>Home" class="waves-effect  waves-light">
+                    <span class="s-caret"></span>
                     <span class="s-icon"><i class="ti-anchor"></i></span>
                     <span class="s-text">Home</span>
                 </a>
 
             </li>
             <li>
-                <a href="Stockc" class="waves-effect  waves-light">
+                <a href="<?php base_url()?>Stockc" class="waves-effect  waves-light">
                     <span class="s-icon"><i class="ti-layout-tab"></i></span>
                     <span class="s-text">Stock</span>
                 </a>

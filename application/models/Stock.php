@@ -21,11 +21,17 @@ class Stock extends CI_Model {
         $this->db->insert('stock',$data);
     }
 
-//    //sample only neat and better
-//    function insert($param_data) {
-//        $this->db->insert('stock',$param_data);
-//    }
 
+    function showstock(){
 
+        $query = $this->db->query("SELECT * FROM `stock`");
+        return $query->result();
+    }
+
+    public function editstock($id){
+
+        $query=$this->db->query("SELECT * FROM stock WHERE id = $id");
+        return $query->result();
+    }
 }
 ?>

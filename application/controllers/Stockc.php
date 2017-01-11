@@ -4,13 +4,22 @@ class Stockc extends CI_Controller{
 
     public function index()
     {
+
         if(isset($_POST['psubmit'])){
             $this->load->model('Stock');
             $this->Stock->insertstock();
-            $this->load->view('stock');
+
+            $this->load->model('Stock');
+            $this->data['showst'] = $this->Stock->showstock();
+            $this->load->view('stock', $this->data);
+
 
         }else{
-            $this->load->view('stock');
+            $this->load->model('Stock');
+            $this->data['showst'] = $this->Stock->showstock();
+            $this->load->view('stock', $this->data);
+
+
         }
     }
 
@@ -50,7 +59,22 @@ class Stockc extends CI_Controller{
 
     }
 
+function showedit($id){
+        ?>
+<!--    <script>alert("hello dolloy")</script>-->
+<?php
 
+   // print_r($id);
+    $this->load->model('Stock');
+    $this->data['ev'] = $this->Stock->editstock();
+    $this->load->view('editview', $this->data);
+
+
+      //  $this->load->library('parser');
+       // $this->parser->parse('editview', $this->data);
+
+
+}
 
 
 }

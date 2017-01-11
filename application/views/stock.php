@@ -34,6 +34,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <![endif]-->
 
 <style>
@@ -142,6 +143,52 @@
         }
     }
 </style>
+
+
+
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: -10px;
+            top: 0;
+
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 
 </head>
 <body class="fixed-sidebar fixed-header skin-default content-appear">
@@ -688,12 +735,45 @@
 
 
                                     <section id="content1">
-                                        <p>
-                                            Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
-                                        </p>
-                                        <p>
-                                            Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
-                                        </p>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h5 class="mb-1">Basic example</h5>
+                                                    <table class="table mb-md-0">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Product Id</th>
+                                                            <th>Type</th>
+                                                            <th>Weight</th>
+                                                            <th>Price</th>
+                                                            <th>In Stock</th>
+                                                            <th>Action</th>
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <?php
+                                                        $count=0;
+                                                        foreach ($showst as $s){?>
+                                                        <tr>
+                                                            <th scope="row"><?php echo $count?></th>
+                                                            <td><?php echo $s->product_id?></td>
+                                                            <td><?php echo $s->type?></td>
+                                                            <td><?php echo $s->weight?></td>
+                                                            <td><?php echo $s->price?></td>
+                                                            <td><?php echo $s->amount?></td>
+                                                            <td> <i data-panel-id="<?= $s->id ?>"  onclick="selectid2(this)" class="fa fa-edit" aria-hidden="true"></i>&nbsp;&nbsp;<button>delete</button></td>
+                                                        </tr>
+                                                        <?php
+                                                        $count=$count+1;
+                                                        }
+                                                        ?>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
                                     </section>
 
                                 <section id="content2">
@@ -703,21 +783,16 @@
                                 <?php
                                 //so you want to show the sidebar once submitted?
                                 if(isset($_POST['psubmit'])){
-                                   //echo $sidebar;
-                                   // echo 1223232332;
+
                                     ?>
                                     <script>
-                                       // alert("hello dolly");
-                                       //document.getElementById("content2").style.display='block';
-                                      // document.getElementById("content2").click();
+
                                        document.getElementById("tab2").checked = true;
                                     </script>
 
                                     <?php
                                 }else {?>
-<!--                                <section id="content2">-->
-<!--                                    --><?php //$this->load->view('insertproduct');?>
-<!--                                </section>-->
+
                                     <?php
 
                                 }
@@ -726,6 +801,24 @@
                             </div>
                         </div>
 
+
+                        <div id="myModal2" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">×</span>
+
+                                <h2>Edit </h2>
+                                <div id="txtHint"><?php
+
+                                    $this->load->view('editview'); ?></div>
+
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                </table>
+
+                            </div>
+
+                        </div>
 
 
 
@@ -759,6 +852,54 @@
 
         </script>
 
+
+        <script>
+
+            // Get the modal
+            // var modal = document.getElementById('myModal');
+            var modal2 = document.getElementById('myModal2');
+
+            // Get the button that opens the modal
+            //var btn = document.getElementById("myBtn");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal
+            // btn = $(x).data('panel-name');
+
+            function selectid2(x) {
+
+                btn = $(x).data('panel-id');
+
+
+                $.ajax({
+                    type:'POST',
+                    url:"<?php base_url()?>/Stockc/showedit",
+                    data:{'id':btn},
+                    cache: false,
+                    success:{
+
+                    }
+                }
+
+                });
+
+                modal2.style.display = "block";
+
+            }
+
+            span.onclick = function() {
+                modal2.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal2) {
+                    modal2.style.display = "none";
+                }
+            }
+
+        </script>
 
 
         <!-- Vendor JS -->
