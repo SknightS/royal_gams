@@ -877,10 +877,7 @@
                     url:"<?php base_url()?>/Stockc/showedit",
                     data:{'id':btn},
                     cache: false,
-                    success:{
-
-                    }
-                }
+                    success:{}
 
                 });
 
