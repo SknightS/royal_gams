@@ -762,7 +762,7 @@
                                                             <td><?php echo $s->weight?></td>
                                                             <td><?php echo $s->price?></td>
                                                             <td><?php echo $s->amount?></td>
-                                                            <td> <a href="<?php echo site_url('Stockc/showedit/'.$s->id);?>"> <i data-panel-id="<?= $s->id ?>"  onclick="selectid2(this)"  class="fa fa-edit" aria-hidden="true"></i></a>&nbsp;&nbsp;<button>delete</button></td>
+                                                            <td>  <i data-panel-id="<?= $s->id ?>"  onclick="selectid2(this)"  class="fa fa-edit" aria-hidden="true"></i>&nbsp;&nbsp;<button>delete</button></td>
                                                         </tr>
                                                         <?php
                                                         $count=$count+1;
@@ -814,49 +814,7 @@
                                     //$this->load->view('editview', $this->data);
                                     //$this->load->view('editview'); ?></div>
 
-                               <?php foreach ($edit as $e){
-                                ?>
-                                <form class="form-material material-primary" method="post" action="">
-                                    <div class="form-group row ">
-                                        <label  class="col-md-3 col-form-label"  >Product ID</label>
-                                        <div class="col-md-7">
-                                            <input type="text" class="form-control"  placeholder="Product ID" name="p_id" id="p_id" value="<?php echo $e->product_id?>" >
-                                        </div>
-                                    </div>
-                                    <div class="form-group row ">
-                                        <label  class="col-md-3 col-form-label"  >Type</label>
-                                        <div class="col-md-7">
-                                            <input type="text" class="form-control"  placeholder="Type" name="type" value="<?php echo  $e->type?>" >
-                                        </div>
-                                    </div>
-                                    <div class="form-group row ">
-                                        <label  class="col-md-3 col-form-label"  >Weight</label>
-                                        <div class="col-md-7">
-                                            <input type="text" class="form-control"  placeholder="Weight" name="weight" id="p_id" value="<?php echo $e->weight?>">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row ">
-                                        <label  class="col-md-3 col-form-label"  >Price</label>
-                                        <div class="col-md-7">
-                                            <input type="text" class="form-control"  placeholder="Price" name="price" value="<?php echo  $e->price?>" >
-                                        </div>
-                                    </div>
-                                    <div class="form-group row ">
-                                        <label  class="col-md-3 col-form-label"  >In Stock</label>
-                                        <div class="col-md-7">
-                                            <input type="text" class="form-control"  placeholder="In Stock" name="amount" value="<?php echo $e->amount?>" >
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="form-group row">
-                                        <div class="col-md-2"></div>
-                                        <div class=" col-md-10">
-                                            <button type="submit" class="btn btn-primary"  name="psubmit">Submit</button>
 
-                                        </div>
-                                    </div>
-                                </form>
-                                <?php }?>
 
 
                             </div>
@@ -925,7 +883,10 @@
                     url:'<?php echo base_url("Stockc/showedit/")?>'+btn,
                     data:{'id':btn},
                     cache: false,
-                    success:{}
+                    success:function(data)
+                    {
+                        $('#txtHint').html(data);
+                    }
 
                 });
 

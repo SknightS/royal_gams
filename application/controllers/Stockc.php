@@ -59,14 +59,15 @@ class Stockc extends CI_Controller{
 
     }
 
-function showedit($id){
+function showedit(){
 
+    $id=$this->input->post('id');
     $this->load->model('Stock');
-    $this->data['showst'] = $this->Stock->showstock();
+  //  $this->data['showst'] = $this->Stock->showstock();
 
 
     $this->data['edit'] = $this->Stock->editstock($id);
-    $this->load->view('stock', $this->data);
+    //$this->load->view('stock', $this->data);
 
     //print_r($this->data['ev']);
 
@@ -76,16 +77,57 @@ function showedit($id){
 //    $this->load->model('Stock');
   //  $this->Stock->insertstock();
 //echo $id;
+//$sakib= json_encode($this->data['edit']);
+
+// echo $sakib;
+  // print_r($this->data['edit']);
+
+    foreach ($this->data['edit'] as $e){
+        echo "<form class=\"form-material material-primary\" method=\"post\" action=\"\">
+                                    <div class=\"form-group row \">
+                                        <label  class=\"col-md-3 col-form-label\"  >Product ID</label>
+                                        <div class=\"col-md-7\">
+                                            <input type=\"text\" class=\"form-control\"  placeholder=\"Product ID\" name=\"p_id\" id=\"p_id\" value=\" $e->product_id\" >
+                                        </div>
+                                    </div>
+                                    <div class=\"form-group row \">
+                                        <label  class=\"col-md-3 col-form-label\"  >Type</label>
+                                        <div class=\"col-md-7\">
+                                            <input type=\"text\" class=\"form-control\"  placeholder=\"Type\" name=\"type\" value=\" $e->type\" >
+                                        </div>
+                                    </div>
+                                    <div class=\"form-group row \">
+                                        <label  class=\"col-md-3 col-form-label\"  >Weight</label>
+                                        <div class=\"col-md-7\">
+                                            <input type=\"text\" class=\"form-control\"  placeholder=\"Weight\" name=\"weight\" id=\"p_id\" value=\" $e->weight\">
+                                        </div>
+                                    </div>
+                                    <div class=\"form-group row \">
+                                        <label  class=\"col-md-3 col-form-label\"  >Price</label>
+                                        <div class=\"col-md-7\">
+                                            <input type=\"text\" class=\"form-control\"  placeholder=\"Price\" name=\"price\" value=\"  $e->price\" >
+                                        </div>
+                                    </div>
+                                    <div class=\"form-group row \">
+                                        <label  class=\"col-md-3 col-form-label\"  >In Stock</label>
+                                        <div class=\"col-md-7\">
+                                            <input type=\"text\" class=\"form-control\"  placeholder=\"In Stock\" name=\"amount\" value=\" $e->amount\" >
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class=\"form-group row\">
+                                        <div class=\"col-md-2\"></div>
+                                        <div class=\" col-md-10\">
+                                            <button type=\"submit\" class=\"btn btn-primary\"  name=\"psubmit\">Submit</button>
+
+                                        </div>
+                                    </div>
+                                </form>";
+
+    }
 
 }
 
-function test(){
-
-
-    $this->load->model('Stock');
-    $this->data['test'] = $this->Stock->test();
-    $this->load->view('test', $this->data);
-}
 
 
 }
