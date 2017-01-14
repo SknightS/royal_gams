@@ -1,6 +1,10 @@
 <!--    --><?php //echo form_open('stockc/insertstock', 'class="form-material material-primary"'); ?>
 <?php
-foreach ($ev as $e){
+extract($_POST);
+echo $id;
+$this->load->model('Stock');
+$this->data['edit'] = $this->Stock->editstock($id);
+foreach ($edit as $e){
 ?>
 <form class="form-material material-primary" method="post" action="">
     <div class="form-group row ">

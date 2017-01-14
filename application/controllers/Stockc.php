@@ -60,20 +60,31 @@ class Stockc extends CI_Controller{
     }
 
 function showedit($id){
-        ?>
-<!--    <script>alert("hello dolloy")</script>-->
-<?php
 
-   // print_r($id);
     $this->load->model('Stock');
-    $this->data['ev'] = $this->Stock->editstock();
-    $this->load->view('editview', $this->data);
+    $this->data['showst'] = $this->Stock->showstock();
 
+
+    $this->data['edit'] = $this->Stock->editstock($id);
+    $this->load->view('stock', $this->data);
+
+    //print_r($this->data['ev']);
 
       //  $this->load->library('parser');
        // $this->parser->parse('editview', $this->data);
 
+//    $this->load->model('Stock');
+  //  $this->Stock->insertstock();
+//echo $id;
 
+}
+
+function test(){
+
+
+    $this->load->model('Stock');
+    $this->data['test'] = $this->Stock->test();
+    $this->load->view('test', $this->data);
 }
 
 

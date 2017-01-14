@@ -28,10 +28,18 @@ class Stock extends CI_Model {
         return $query->result();
     }
 
-    public function editstock($id){
+    public function editstock(){
 
-        $query=$this->db->query("SELECT * FROM stock WHERE id = $id");
+        $query=$this->db->query("SELECT * FROM stock ");
         return $query->result();
     }
+
+
+    function test(){
+
+        $query=$this->db->query("SELECT * FROM stock ");
+        return $query->result();
+    }
+
 }
 ?>
