@@ -737,7 +737,20 @@
 
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <h5 class="mb-1">Basic example</h5>
+                                                    <form class="form-material material-primary" method="post" action="Stockc/search_by_id">
+                                                    <div class="form-group row ">
+                                                        <div class="col-md-3">
+                                                            <input type="text" class="form-control"  placeholder="Product ID" name="sp_id" id="p_id" >
+                                                        </div>
+
+                                                        <div class="col-md-2">
+                                                            <button type="submit" class="btn btn-primary"  name="submit">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                    </form>
+
+                                                    <br>
+                                                    <h5 class="mb-1">Product List</h5>
                                                     <table class="table mb-md-0">
                                                         <thead>
                                                         <tr>
@@ -762,7 +775,7 @@
                                                             <td><?php echo $s->weight?></td>
                                                             <td><?php echo $s->price?></td>
                                                             <td><?php echo $s->amount?></td>
-                                                            <td>  <i data-panel-id="<?= $s->id ?>"  onclick="selectid2(this)"  class="fa fa-edit" aria-hidden="true"></i>&nbsp;&nbsp;<button>delete</button></td>
+                                                            <td>  <i data-panel-id="<?= $s->id ?>"  onclick="selectid2(this)"  class="fa fa-edit" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;<i data-panel-id="<?= $s->id ?>" onclick="selectid(this)"  class="fa fa-trash-o" aria-hidden="true"></i>&nbsp;</td>
                                                         </tr>
                                                         <?php
                                                         $count=$count+1;
@@ -912,6 +925,20 @@
                     modal2.style.display = "block";
 
             }
+
+
+            function selectid(x) {
+
+                btn1 = $(x).data('panel-id');
+
+            if(confirm("Do you want to delete?")) {
+                window.location="Stockc/delete/"+btn1;
+            }
+
+
+
+            }
+
 
             span.onclick = function() {
                 modal2.style.display = "none";

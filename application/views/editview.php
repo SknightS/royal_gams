@@ -1,16 +1,13 @@
 <!--    --><?php //echo form_open('stockc/insertstock', 'class="form-material material-primary"'); ?>
 <?php
-extract($_POST);
-echo $id;
-$this->load->model('Stock');
-$this->data['edit'] = $this->Stock->editstock($id);
+
 foreach ($edit as $e){
 ?>
 <form class="form-material material-primary" method="post" action="">
     <div class="form-group row ">
         <label  class="col-md-3 col-form-label"  >Product ID</label>
         <div class="col-md-7">
-            <input type="text" class="form-control"  placeholder="Product ID" name="p_id" id="p_id" value="<?php $e->p_id?>" >
+            <input type="text" class="form-control"  placeholder="Product ID" name="p_id" id="p_id" value="<?php $e->product_id?>" >
         </div>
     </div>
     <div class="form-group row ">

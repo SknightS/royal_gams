@@ -59,31 +59,46 @@ class Stockc extends CI_Controller{
 
     }
 
-function showedit(){
+    function edit($id){
+
+        $this->load->model('Stock');
+        $this->Stock->edit($id);
+        redirect(Stockc);
+
+    }
+
+    function delete($id){
+
+        //$id=$this->input->post('sp_id');
+        $this->load->model('Stock');
+        $this->Stock->delete($id);
+        redirect(Stockc);
+
+    }
+
+    function search_by_id(){
+
+        $id=$this->input->post('sp_id');
+       // $type=$this->uri->segment(4);
+        $this->load->model('Stock');
+        $this->data['showst'] = $this->Stock->search_by_id($id);
+        $this->load->view('stock', $this->data);
+
+    }
+
+
+
+
+    function showedit(){
 
     $id=$this->input->post('id');
     $this->load->model('Stock');
-  //  $this->data['showst'] = $this->Stock->showstock();
-
 
     $this->data['edit'] = $this->Stock->editstock($id);
-    //$this->load->view('stock', $this->data);
 
-    //print_r($this->data['ev']);
-
-      //  $this->load->library('parser');
-       // $this->parser->parse('editview', $this->data);
-
-//    $this->load->model('Stock');
-  //  $this->Stock->insertstock();
-//echo $id;
-//$sakib= json_encode($this->data['edit']);
-
-// echo $sakib;
-  // print_r($this->data['edit']);
 
     foreach ($this->data['edit'] as $e){
-        echo "<form class=\"form-material material-primary\" method=\"post\" action=\"\">
+        echo "<form class=\"form-material material-primary\" method=\"post\" action=\"  Stockc/edit/$e->id\">
                                     <div class=\"form-group row \">
                                         <label  class=\"col-md-3 col-form-label\"  >Product ID</label>
                                         <div class=\"col-md-7\">
@@ -118,7 +133,7 @@ function showedit(){
                                     <div class=\"form-group row\">
                                         <div class=\"col-md-2\"></div>
                                         <div class=\" col-md-10\">
-                                            <button type=\"submit\" class=\"btn btn-primary\"  name=\"psubmit\">Submit</button>
+                                            <button type=\"submit\" class=\"btn btn-primary\"  name=\"stockedit\">Submit</button>
 
                                         </div>
                                     </div>
