@@ -67,7 +67,8 @@ class Stock extends CI_Model {
 
     function search_by_id($id){
 
-        $query=$this->db->query("SELECT * FROM stock WHERE `id`= '$id'");
+        $type="";
+        $query=$this->db->query("SELECT * FROM stock WHERE `product_id`= '$id'");
         return $query->result();
 
 

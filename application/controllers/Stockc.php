@@ -98,7 +98,7 @@ class Stockc extends CI_Controller{
 
 
     foreach ($this->data['edit'] as $e){
-        echo "<form class=\"form-material material-primary\" method=\"post\" action=\"  Stockc/edit/$e->id\">
+        echo "<form class=\"form-material material-primary\" method=\"post\" action=\"http://localhost/royal_gams/Stockc/edit/$e->id\">
                                     <div class=\"form-group row \">
                                         <label  class=\"col-md-3 col-form-label\"  >Product ID</label>
                                         <div class=\"col-md-7\">
