@@ -1,5 +1,5 @@
 <!--    --><?php //echo form_open('stockc/insertstock', 'class="form-material material-primary"'); ?>
-<form class="form-material material-primary" method="post" action="<?php echo base_url()?>Purchase/insert">
+<form class="form-material material-primary" method="post" action="<?php echo base_url()?>Purchasec/insert">
     <div class="form-group row ">
         <label  class="col-md-3 col-form-label"  >Product ID</label>
         <div class="col-md-7">
@@ -33,13 +33,13 @@
     <div class="form-group row ">
         <label  class="col-md-3 col-form-label"  >Paid</label>
         <div class="col-md-7">
-            <input type="text" class="form-control"  placeholder="paid" name="amount" >
+            <input type="text" class="form-control"  placeholder="paid" name="paid" >
         </div>
     </div>
     <div class="form-group row ">
         <label  class="col-md-3 col-form-label"  >Due</label>
         <div class="col-md-7">
-            <input type="text" class="form-control"  placeholder="Due" name="amount" >
+            <input type="text" class="form-control"  placeholder="Due" name="due" >
         </div>
     </div>
     <br>

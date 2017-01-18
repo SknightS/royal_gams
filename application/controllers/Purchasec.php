@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Purchase extends CI_Controller{
+class Purchasec extends CI_Controller{
 
     public function index()
     {
@@ -10,6 +10,12 @@ class Purchase extends CI_Controller{
 
 
 
+    public function insert(){
+
+        $this->load->model('Purchase');
+        $this->Purchase->insert();
+
+    }
 
 
 }

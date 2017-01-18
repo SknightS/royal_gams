@@ -25,7 +25,7 @@
             </li>
 
             <li class="with-sub">
-                <a href="<?php echo base_url()?>Purchase" class="waves-effect  waves-light">
+                <a href="<?php echo base_url()?>Purchasec" class="waves-effect  waves-light">
                     <span class="s-caret"></span>
                     <span class="s-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     <span class="s-text">Purchase</span>
