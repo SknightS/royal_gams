@@ -34,6 +34,24 @@ foreach ($edit as $e){
             <input type="text" class="form-control"  placeholder="In Stock" name="amount" value="<?php $e->amount?>" >
         </div>
     </div>
+    <div class="form-group row ">
+        <label  class="col-md-3 col-form-label"  >In Stock</label>
+        <div class="col-md-7">
+            <input type="text" class="form-control"  placeholder="In Stock" name="amount" value="<?php $e->amount?>" >
+        </div>
+    </div>
+    <div class="form-group row ">
+        <label  class="col-md-3 col-form-label"  >In Stock</label>
+        <div class="col-md-7">
+            <input type="text" class="form-control"  placeholder="In Stock" name="amount" value="<?php $e->amount?>" >
+        </div>
+    </div>
+    <div class="form-group row ">
+        <label  class="col-md-3 col-form-label"  >In Stock</label>
+        <div class="col-md-7">
+            <input type="text" class="form-control"  placeholder="In Stock" name="amount" value="<?php $e->amount?>" >
+        </div>
+    </div>
     <br>
     <div class="form-group row">
         <div class="col-md-2"></div>

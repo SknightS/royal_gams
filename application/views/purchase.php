@@ -320,6 +320,9 @@
                                                     <th>Weight</th>
                                                     <th>Price</th>
                                                     <th>In Stock</th>
+                                                    <th>Paid</th>
+                                                    <th>Due</th>
+                                                    <th>Date</th>
                                                     <th>Action</th>
 
                                                 </tr>
@@ -327,14 +330,17 @@
                                                 <tbody>
                                                 <?php
                                                 $count=0;
-                                                foreach ($showst as $s){?>
+                                                foreach ($showpd as $s){?>
                                                     <tr>
                                                         <th scope="row"><?php echo $count?></th>
                                                         <td><?php echo $s->product_id?></td>
                                                         <td><?php echo $s->type?></td>
                                                         <td><?php echo $s->weight?></td>
                                                         <td><?php echo $s->price?></td>
-                                                        <td><?php echo $s->amount?></td>
+                                                        <td><?php echo $s->	instock?></td>
+                                                        <td><?php echo $s->	paid?></td>
+                                                        <td><?php echo $s->	due?></td>
+                                                        <td><?php echo $s->	date?></td>
                                                         <td>  <i data-panel-id="<?= $s->id ?>"  onclick="selectid2(this)"  class="fa fa-edit" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;<i data-panel-id="<?= $s->id ?>" onclick="selectid(this)"  class="fa fa-trash-o" aria-hidden="true"></i>&nbsp;</td>
                                                     </tr>
                                                     <?php
@@ -448,7 +454,7 @@
 
             $.ajax({
                 type:'POST',
-                url:'<?php echo base_url("Stockc/showedit/")?>'+btn,
+                url:'<?php echo base_url("Purchasec/showedit/")?>'+btn,
                 data:{'id':btn},
                 cache: false,
                 success:function(data)
@@ -487,7 +493,7 @@
             btn1 = $(x).data('panel-id');
 
             if(confirm("Do you want to delete?")) {
-                window.location="<?php echo base_url()?>Stockc/delete/"+btn1;
+                window.location="<?php echo base_url()?>Purchasec/delete/"+btn1;
             }
 
 
