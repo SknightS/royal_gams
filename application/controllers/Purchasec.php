@@ -31,6 +31,15 @@ class Purchasec extends CI_Controller{
 
     }
 
+    function edit($id){
+
+        //$id=$this->input->post('sp_id');
+        $this->load->model('Purchase');
+        $this->Purchase->edit($id);
+        redirect(Purchasec);
+
+    }
+
     public function showedit()
     {
 
@@ -41,7 +50,7 @@ class Purchasec extends CI_Controller{
 
 
         foreach ($this->data['edit'] as $e) {
-            echo "<form class=\"form-material material-primary\" method=\"post\" action=\"Purchasec/edit\">
+            echo "<form class=\"form-material material-primary\" method=\"post\" action=\"Purchasec/edit/$e->id\">
     <div class=\"form-group row \">
         <label  class=\"col-md-3 col-form-label\"  >Product ID</label>
         <div class=\"col-md-7\">
@@ -75,19 +84,19 @@ class Purchasec extends CI_Controller{
     <div class=\"form-group row \">
         <label  class=\"col-md-3 col-form-label\"  >In Stock</label>
         <div class=\"col-md-7\">
-            <input type=\"text\" class=\"form-control\"  placeholder=\"In Stock\" name=\"amount\" value=\" $e->paid \" >
+            <input type=\"text\" class=\"form-control\"  placeholder=\"In Stock\" name=\"paid\" value=\" $e->paid \" >
         </div>
     </div>
     <div class=\"form-group row \">
         <label  class=\"col-md-3 col-form-label\"  >In Stock</label>
         <div class=\"col-md-7\">
-            <input type=\"text\" class=\"form-control\"  placeholder=\"In Stock\" name=\"amount\" value=\" $e->due \" >
+            <input type=\"text\" class=\"form-control\"  placeholder=\"In Stock\" name=\"due\" value=\" $e->due \" >
         </div>
     </div>
     <div class=\"form-group row \">
         <label  class=\"col-md-3 col-form-label\"  >In Stock</label>
         <div class=\"col-md-7\">
-            <input type=\"text\" class=\"form-control\"  placeholder=\"In Stock\" name=\"amount\" value=\" $e->date \" >
+            <input type=\"text\" class=\"form-control\"  placeholder=\"In Stock\" name=\"date\" value=\" $e->date \" >
         </div>
     </div>
     <br>

@@ -48,17 +48,17 @@ class Purchase extends CI_Model {
         $amount = $this->input->post('amount');
         $paid = $this->input->post('paid');
         $due = $this->input->post('due');
-        $date = $this->input->post('amount');
+        $date = $this->input->post('date');
 
         $data = array(
             'product_id' => $p_id,
             'type' => $type,
             'weight' => $weight,
             'price' => $price,
-            'amount' => $amount,
-            'paid' => $amount,
-            'due' => $amount,
-            'date' => $amount,
+            'instock' => $amount,
+            'paid' => $paid,
+            'due' => $due,
+            'date' => $date,
         );
 
         $this->db->where('id', $id);
